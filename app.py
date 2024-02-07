@@ -105,6 +105,6 @@ if wav is not None:
     num_positive_predictions = sum(pred == 1 for pred in predictions)
 
     # Decide the final prediction based on majority vote
-    final_prediction = 1 if num_positive_predictions > len(predictions)//1.3 else 0
+    final_prediction = 1 if num_positive_predictions > len(predictions)//1.5 else 0
 
     st.write('The model predicts', 'that the sample is Bone Cancer positive' if final_prediction == 1 else 'the sample doesn\'t have Bone Cancer')
