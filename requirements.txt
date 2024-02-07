@@ -3,3 +3,4 @@ tensorflow
 torch
 Pillow
 numpy
+torchvision
