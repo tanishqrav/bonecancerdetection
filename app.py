@@ -79,8 +79,8 @@ class Dataset(torch.utils.data.Dataset):
             image = self.transform(image)
         return image
 
-st.title("Histopathological Cancer Detection")
-st.markdown("For Histopathological Cancer from .tif images using a Convolutional Neural Network, implemented with PyTorch!")
+st.title("Bone Cancer Detection")
+st.markdown("For Bone Cancer from  images using a Convolutional Neural Network, implemented with PyTorch!")
 
 wav = st.file_uploader("Upload your Image file (TIF)")
 if wav is not None:
@@ -107,4 +107,4 @@ if wav is not None:
     # Decide the final prediction based on majority vote
     final_prediction = 1 if num_positive_predictions > len(predictions)/1.5 else 0
 
-    st.write('The model predicts', 'that the sample is cancer positive' if final_prediction == 1 else 'the sample doesn\'t have Cancer')
+    st.write('The model predicts', 'that the sample is Bone Cancer positive' if final_prediction == 1 else 'the sample doesn\'t have Bone Cancer')
