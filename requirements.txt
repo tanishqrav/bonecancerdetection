@@ -2,3 +2,4 @@ streamlit
 tensorflow
 torch
 Pillow
+numpy
